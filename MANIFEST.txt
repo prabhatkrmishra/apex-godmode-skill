@@ -1,0 +1,10 @@
+Apex Godmode v4.1
+One cross-agent skill entrypoint for Claude Code, Codex, OpenClaw, and Hermes Agent.
+
+Single skill entrypoint:
+apex-godmode/SKILL.md
+
+Supporting directories:
+modes/ phases/ reviewers/ references/ schemas/ scripts/ templates/
+
+No duplicated per-agent skill trees.

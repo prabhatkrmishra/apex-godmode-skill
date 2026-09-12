@@ -1,4 +1,4 @@
-# Apex Godmode v4.1
+# Apex Godmode v6.4
 
 One adaptive, evidence-driven engineering skill for Claude Code, Codex, OpenClaw, and Hermes.
 
@@ -33,7 +33,7 @@ User-wide:
 ~/.claude/skills/apex-godmode/
 ```
 
-Alternatively, distribute it as a Claude Code plugin and place the skill under the plugin's `skills/apex-godmode/` directory. Keep the entire `apex-godmode/` directory intact. Invoke `/apex-godmode` in Claude Code when the skill is installed directly.
+Keep the entire `apex-godmode/` directory intact. Invoke with `/apex-godmode` in Claude Code. Skills are automatically discovered when the project/user skill source is enabled.
 
 ### Codex
 
@@ -81,7 +81,7 @@ Hermes can also scan external skill directories; when using an external source, 
 
 The public entrypoint is the single skill `apex-godmode`.
 
-The router is inside `SKILL.md` and automatically selects execution depth from the task's scope, risk, coupling, autonomy request, and verification burden. Explicit policy names remain supported inside the skill.
+The router automatically selects execution depth from the task's scope, risk, coupling, and verification burden.
 
 Internal policies:
 
@@ -94,7 +94,7 @@ Users may explicitly request a policy, but ordinary usage only requires the main
 
 ## Mandatory pre-implementation research
 
-Before executable behavior is changed, Apex detects the actual language/framework/runtime/library versions and researches current anti-patterns and version-specific guidance on the web when the host provides web access.
+Before executable behavior is changed, Apex performs repository-wide stack detection (languages, runtimes, build/package managers, frameworks, application roles, material subsystems, test tooling, infrastructure, modules/workspaces) and detects actual language/framework/runtime/library versions (including explicit Spring Boot/Maven/Gradle fingerprints across multi-module repositories) and researches current anti-patterns and version-specific guidance on the web when the host provides web access.
 
 Research is not accepted from search snippets alone. Material findings must be linked to the implementation plan and to a verification check. High-risk work requires stronger external-source coverage.
 
@@ -126,7 +126,7 @@ The included shell scripts are helper checks, not substitutes for the host agent
 
 ## Competitive capabilities
 
-Apex v4 includes task-type routing, adaptive depth, mandatory current-stack research, version-aware anti-pattern prevention, runtime verification, independent specialist review, evidence-integrity checks, bounded repair loops, strategy pivots, git/change safety, progress state, outcome feedback, and Evolution holdout/frozen-regression controls.
+Apex v6.3 includes task-type routing, adaptive depth, mandatory current-stack research, version-aware anti-pattern prevention, runtime verification, independent specialist review, evidence-integrity checks, bounded repair loops, strategy pivots, git/change safety, progress state, outcome feedback, and Evolution holdout/frozen-regression controls.
 
 The design intentionally treats model self-scoring as secondary evidence. Objective commands, runtime observations, compiler/type/build results, and reproducible artifacts are preferred.
 
@@ -134,4 +134,23 @@ The design intentionally treats model self-scoring as secondary evidence. Object
 
 The current official documentation describes Claude Code skills as directories containing `SKILL.md` with optional supporting resources; Claude can discover them automatically or invoke them as slash skills. OpenClaw describes the same `SKILL.md` directory model, including grouped layouts and referenced supporting files. Hermes documents `SKILL.md` plus `references/`, `scripts/`, and other supporting directories, with progressive disclosure.
 
-Version: 4.1.0
+Version: 6.3.0
+
+## v6.3 additions
+
+Apex v6.3 adds module-aware verification that does not trust a root test command as proof of child-module coverage, environment/reproducibility controls, generated-code controls, API compatibility review, UI accessibility review, explicit approval boundaries, resumable run state, workspace isolation, operations review, and change-scope review.
+
+
+## v6 improvements
+
+Apex v6 adds change-impact analysis, dependency-aware multi-module verification, stronger task routing based on blast radius rather than file count alone, and additional regression controls.
+
+
+### v6.1 additions
+
+Compatibility review, data-integrity review, test-hermeticity review, and release reversibility assessment are now first-class controls.
+
+
+## License
+
+MIT. See `LICENSE`.

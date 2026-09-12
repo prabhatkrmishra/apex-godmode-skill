@@ -1,6 +1,6 @@
 # Phase 7 — Final Gate
 
-Do not deliver until all required gates are explicitly resolved.
+Do not deliver until all required gates are explicitly resolved. For executable work, unresolved research or verification gates are blocking whenever the host has the capability to perform the required check.
 
 ## Required gates
 
@@ -8,7 +8,7 @@ Do not deliver until all required gates are explicitly resolved.
 - implementation completeness: PASS
 - targeted tests: PASS or justified N/A
 - regression/type/build checks: PASS or justified N/A
-- anti-pattern research: COMPLETE
+- anti-pattern research: COMPLETE (for executable work when web research is available)
 - anti-pattern recheck: PASS
 - reviewer findings: no blocking finding
 - evidence integrity: PASS

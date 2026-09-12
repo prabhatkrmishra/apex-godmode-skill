@@ -1,10 +1,12 @@
-Apex Godmode v4.1
+Apex Godmode v6.4.0
 One cross-agent skill entrypoint for Claude Code, Codex, OpenClaw, and Hermes Agent.
 
 Single skill entrypoint:
 apex-godmode/SKILL.md
 
 Supporting directories:
-modes/ phases/ reviewers/ references/ schemas/ scripts/ templates/
+modes/ phases/ reviewers/ references/ schemas/ scripts/
+
+Stack detection includes Spring Boot fingerprinting across Maven, Gradle, and JVM source, including multi-module repositories.
 
 No duplicated per-agent skill trees.

@@ -79,4 +79,4 @@ Repeat the research gate if:
 
 ## Web unavailable
 
-Never claim that current web research was performed when it was not. When web access is unavailable, do not implement executable changes unless the task is demonstrably low-risk and the missing research cannot materially affect the implementation. For material framework or language guidance, block implementation rather than fabricating confidence.
+Never claim that current web research was performed when it was not. For low-risk work, mark the research gap and compensate with stronger local tests/review. For high-risk work where current external guidance is materially necessary, block implementation rather than fabricating confidence.

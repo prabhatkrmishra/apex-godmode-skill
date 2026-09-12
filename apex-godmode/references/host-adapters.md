@@ -22,7 +22,7 @@ Use the repository's discovered instructions and available tools. Keep the workf
 
 ## OpenClaw
 
-Use the skill root and `{baseDir}` when the host expands it. Do not assume OpenClaw-specific dispatch unless detected. Keep supporting references/scripts under the skill directory.
+Resolve supporting files relative to the directory containing this `SKILL.md`. If the host provides a skill-root variable, use it; otherwise use the host's documented skill directory or the current skill file location. Do not assume a `{baseDir}` placeholder is available. Do not assume OpenClaw-specific dispatch unless detected. Keep supporting references/scripts under the skill directory.
 
 ## Hermes
 
